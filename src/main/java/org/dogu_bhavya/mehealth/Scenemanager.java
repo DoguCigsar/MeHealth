@@ -1,5 +1,4 @@
 package org.dogu_bhavya.mehealth;
-
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
