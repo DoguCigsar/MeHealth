@@ -14,34 +14,37 @@ public class Scenemanager
         stage.setScene(scene);
     }
 
-   /* public void Login() {
+    public void Login() {
         setScene(new Scene(new Login(this), 420, 640));
     }
 
-    public void SignUp() {
-        setScene(new Scene(new SignUpView(this), 420, 640));
+    public void Signup() {
+        setScene(new Scene(new Signup(this), 420, 640));
     }
 
     public void MainMenu() {
-        setScene(new Scene(new MainMenuView(this), 600, 600));
+        setScene(new Scene(new MainMenu(this), 600, 600));
     }
 
-    public void Quiz() {
-        setScene(new Scene(new QuizView(this), 600, 600));
+    public void SignupQuestions() {
+        setScene(new Scene(new SignupQuestions(this), 600, 600));
+    }
+    public void Questions() {
+        setScene(new Scene(new Questions(this), 600, 600));
     }
 
     public void Chat() {
-        setScene(new Scene(new ChatView(this), 600, 600));
+        setScene(new Scene(new Chat(this), 600, 600));
     }
 
     public void Journal() {
-        setScene(new Scene(new JournalView(this), 600, 600));
+        setScene(new Scene(new Journal(this), 600, 600));
     }
 
     public void Settings() {
-        setScene(new Scene(new SettingsView(this), 600, 600));
+        setScene(new Scene(new Settings(this), 600, 600));
     }
 
-    */
+
 }
 

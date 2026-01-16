@@ -1,8 +1,11 @@
 package org.dogu_bhavya.mehealth;
-import org.dogu_bhavya.mehealth.Scenemanager;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
+
+import static javafx.application.Application.launch;
 
 public class Login extends VBox {
 
@@ -18,12 +21,16 @@ public class Login extends VBox {
         PasswordField password = new PasswordField();
         password.setPromptText("Password");
 
-        Button loginBtn = new Button("Login");
-       // loginBtn.setOnAction(e -> sm.MainMenu());
+       Button loginBtn = new Button("Login");
+       loginBtn.setOnAction(e -> sm.MainMenu());
 
         Button signupBtn = new Button("Sign Up");
-        //signupBtn.setOnAction(e -> sm.SignUp());
+        signupBtn.setOnAction(e -> sm.Signup());
 
         getChildren().addAll(title, userName, password, loginBtn, signupBtn);
     }
+    public static void ogin(String[] args) {
+        launch(args);
+    }
 }
+
