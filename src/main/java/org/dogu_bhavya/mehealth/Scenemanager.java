@@ -45,6 +45,5 @@ public class Scenemanager
         setScene(new Scene(new Settings(this), 600, 600));
     }
 
-
 }
 
