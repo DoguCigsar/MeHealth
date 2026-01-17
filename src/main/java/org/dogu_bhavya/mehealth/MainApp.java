@@ -9,7 +9,7 @@ public class MainApp extends Application
     public void start(Stage stage) throws Exception
     {
         Scenemanager sm = new Scenemanager(stage);
-       // sm.Login();
+        sm.Login();
 
         stage.setTitle("MeHealth");
         stage.show();

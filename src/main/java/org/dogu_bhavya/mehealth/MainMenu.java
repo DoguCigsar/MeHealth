@@ -4,6 +4,7 @@ import org.dogu_bhavya.mehealth.Scenemanager;
 import javafx.geometry.Insets;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
+import static javafx.application.Application.launch;
 public class MainMenu extends VBox {
 
     public MainMenu(Scenemanager sm) {
@@ -12,8 +13,8 @@ public class MainMenu extends VBox {
 
         Label title = new Label("Main Menu");
 
-        Button quizBtn = new Button("Quiz");
-        quizBtn.setOnAction(e -> sm.Questions());
+        Button questionsBtn = new Button("Questions");
+        questionsBtn.setOnAction(e -> sm.Questions());
 
         Button chatBtn = new Button("Chat");
         chatBtn.setOnAction(e -> sm.Chat());
@@ -24,6 +25,6 @@ public class MainMenu extends VBox {
         Button settingsBtn = new Button("Settings");
         settingsBtn.setOnAction(e -> sm.Settings());
 
-        getChildren().addAll(title, quizBtn, chatBtn, journalBtn, settingsBtn);
+        getChildren().addAll(title, questionsBtn, chatBtn, journalBtn, settingsBtn);
     }
 }
